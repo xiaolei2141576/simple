@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Simple.Models</name>
+    </assembly>
+    <members>
+        <member name="P:Simple.Models.Common.TokenModelJWT.Uid">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:Simple.Models.Common.TokenModelJWT.Role">
+            <summary>
+            角色
+            </summary>
+        </member>
+        <member name="P:Simple.Models.Common.TokenModelJWT.Work">
+            <summary>
+            职能
+            </summary>
+        </member>
+    </members>
+</doc>

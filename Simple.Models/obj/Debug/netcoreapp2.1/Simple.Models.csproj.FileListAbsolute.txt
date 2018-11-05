@@ -6,3 +6,11 @@ G:\myproject\simple\Simple.Models\obj\Debug\netcoreapp2.1\Simple.Models.Assembly
 G:\myproject\simple\Simple.Models\obj\Debug\netcoreapp2.1\Simple.Models.AssemblyInfo.cs
 G:\myproject\simple\Simple.Models\obj\Debug\netcoreapp2.1\Simple.Models.dll
 G:\myproject\simple\Simple.Models\obj\Debug\netcoreapp2.1\Simple.Models.pdb
+G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Models.deps.json
+G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Models.dll
+G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Models.pdb
+G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Models.xml
+G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\netcoreapp2.1\Simple.Models.deps.json
+G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\netcoreapp2.1\Simple.Models.dll
+G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\netcoreapp2.1\Simple.Models.pdb
+G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\netcoreapp2.1\Simple.Models.xml

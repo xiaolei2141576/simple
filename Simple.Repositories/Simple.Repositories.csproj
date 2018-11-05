@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>G:\myproject\simple\Simple\bin\Debug\</OutputPath>
+    <DocumentationFile>G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Repositories.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>

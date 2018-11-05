@@ -1,0 +1,8 @@
+G:\myproject\simple\Simple.IRepositories\bin\Debug\netcoreapp2.1\Simple.IRepositories.deps.json
+G:\myproject\simple\Simple.IRepositories\bin\Debug\netcoreapp2.1\Simple.IRepositories.dll
+G:\myproject\simple\Simple.IRepositories\bin\Debug\netcoreapp2.1\Simple.IRepositories.pdb
+G:\myproject\simple\Simple.IRepositories\obj\Debug\netcoreapp2.1\Simple.IRepositories.csproj.CoreCompileInputs.cache
+G:\myproject\simple\Simple.IRepositories\obj\Debug\netcoreapp2.1\Simple.IRepositories.AssemblyInfoInputs.cache
+G:\myproject\simple\Simple.IRepositories\obj\Debug\netcoreapp2.1\Simple.IRepositories.AssemblyInfo.cs
+G:\myproject\simple\Simple.IRepositories\obj\Debug\netcoreapp2.1\Simple.IRepositories.dll
+G:\myproject\simple\Simple.IRepositories\obj\Debug\netcoreapp2.1\Simple.IRepositories.pdb

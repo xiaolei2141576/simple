@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple.Api", "Simple\Simple.Api.csproj", "{DF7EACF0-1452-4CF4-BD0B-A417239A73F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple.Api", "Simple.Api\Simple.Api.csproj", "{DF7EACF0-1452-4CF4-BD0B-A417239A73F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.Models", "Simple.Models\Simple.Models.csproj", "{93EDEDF9-D9EA-4902-9CA3-FC63B30E3B2F}"
 EndProject
