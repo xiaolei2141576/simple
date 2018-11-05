@@ -11507,9 +11507,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\myproject\\simple\\Simple\\Simple.csproj",
-      "projectName": "Simple",
-      "projectPath": "G:\\myproject\\simple\\Simple\\Simple.csproj",
+      "projectUniqueName": "G:\\myproject\\simple\\Simple\\Simple.Api.csproj",
+      "projectName": "Simple.Api",
+      "projectPath": "G:\\myproject\\simple\\Simple\\Simple.Api.csproj",
       "packagesPath": "C:\\Users\\zl\\.nuget\\packages\\",
       "outputPath": "G:\\myproject\\simple\\Simple\\obj\\",
       "projectStyle": "PackageReference",
