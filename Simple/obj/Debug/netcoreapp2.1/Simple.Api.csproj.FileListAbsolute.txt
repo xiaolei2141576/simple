@@ -12,3 +12,6 @@ G:\myproject\simple\Simple\obj\Debug\netcoreapp2.1\Simple.Api.AssemblyInfo.cs
 G:\myproject\simple\Simple\obj\Debug\netcoreapp2.1\Simple.Api.RazorTargetAssemblyInfo.cache
 G:\myproject\simple\Simple\obj\Debug\netcoreapp2.1\Simple.Api.dll
 G:\myproject\simple\Simple\obj\Debug\netcoreapp2.1\Simple.Api.pdb
+G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Models.dll
+G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Models.pdb
+G:\myproject\simple\Simple\obj\Debug\netcoreapp2.1\Simple.Api.csproj.CopyComplete

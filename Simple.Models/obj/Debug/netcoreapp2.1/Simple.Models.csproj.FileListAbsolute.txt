@@ -1,0 +1,8 @@
+G:\myproject\simple\Simple.Models\bin\Debug\netcoreapp2.1\Simple.Models.deps.json
+G:\myproject\simple\Simple.Models\bin\Debug\netcoreapp2.1\Simple.Models.dll
+G:\myproject\simple\Simple.Models\bin\Debug\netcoreapp2.1\Simple.Models.pdb
+G:\myproject\simple\Simple.Models\obj\Debug\netcoreapp2.1\Simple.Models.csproj.CoreCompileInputs.cache
+G:\myproject\simple\Simple.Models\obj\Debug\netcoreapp2.1\Simple.Models.AssemblyInfoInputs.cache
+G:\myproject\simple\Simple.Models\obj\Debug\netcoreapp2.1\Simple.Models.AssemblyInfo.cs
+G:\myproject\simple\Simple.Models\obj\Debug\netcoreapp2.1\Simple.Models.dll
+G:\myproject\simple\Simple.Models\obj\Debug\netcoreapp2.1\Simple.Models.pdb
