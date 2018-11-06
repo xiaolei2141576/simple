@@ -207,6 +207,26 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Simple.IRepositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Simple.IRepositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Simple.IRepositories.dll": {}
+        }
+      },
+      "Simple.IServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Simple.IServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Simple.IServices.dll": {}
+        }
       }
     }
   },
@@ -673,11 +693,23 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Simple.IRepositories/1.0.0": {
+      "type": "project",
+      "path": "../Simple.IRepositories/Simple.IRepositories.csproj",
+      "msbuildProject": "../Simple.IRepositories/Simple.IRepositories.csproj"
+    },
+    "Simple.IServices/1.0.0": {
+      "type": "project",
+      "path": "../Simple.IServices/Simple.IServices.csproj",
+      "msbuildProject": "../Simple.IServices/Simple.IServices.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Simple.IRepositories >= 1.0.0",
+      "Simple.IServices >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -709,7 +741,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "G:\\myproject\\simple\\Simple.IRepositories\\Simple.IRepositories.csproj": {
+              "projectPath": "G:\\myproject\\simple\\Simple.IRepositories\\Simple.IRepositories.csproj"
+            },
+            "G:\\myproject\\simple\\Simple.IServices\\Simple.IServices.csproj": {
+              "projectPath": "G:\\myproject\\simple\\Simple.IServices\\Simple.IServices.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

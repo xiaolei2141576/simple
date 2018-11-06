@@ -6,7 +6,12 @@
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>G:\myproject\simple\Simple\bin\Debug\</OutputPath>
-    <DocumentationFile>G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Services.xml</DocumentationFile>
+    <DocumentationFile></DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Simple.IRepositories\Simple.IRepositories.csproj" />
+    <ProjectReference Include="..\Simple.IServices\Simple.IServices.csproj" />
+  </ItemGroup>
 
 </Project>

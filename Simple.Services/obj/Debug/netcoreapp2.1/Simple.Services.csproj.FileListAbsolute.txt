@@ -9,4 +9,4 @@ G:\myproject\simple\Simple.Services\obj\Debug\netcoreapp2.1\Simple.Services.pdb
 G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Services.deps.json
 G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Services.dll
 G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Services.pdb
-G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Services.xml
+G:\myproject\simple\Simple.Services\obj\Debug\netcoreapp2.1\Simple.Services.csprojAssemblyReference.cache
