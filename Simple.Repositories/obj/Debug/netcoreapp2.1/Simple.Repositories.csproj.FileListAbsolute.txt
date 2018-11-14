@@ -10,3 +10,4 @@ G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Repositories.deps.json
 G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Repositories.dll
 G:\myproject\simple\Simple\bin\Debug\netcoreapp2.1\Simple.Repositories.pdb
 G:\myproject\simple\Simple.Repositories\obj\Debug\netcoreapp2.1\Simple.Repositories.csprojAssemblyReference.cache
+G:\myproject\simple\Simple.Repositories\obj\Debug\netcoreapp2.1\Simple.Repositories.csproj.CopyComplete

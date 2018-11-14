@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Simple.IServices.Base
 {
@@ -15,14 +16,14 @@ namespace Simple.IServices.Base
         /// </summary>
         /// <param name="predicate"></param>
         /// <returns></returns>
-        TEntity Single(Expression<Func<TEntity, bool>> predicate);
+        Task<TEntity> Single(Expression<Func<TEntity, bool>> predicate);
 
         /// <summary>
         /// 单表查询
         /// </summary>
         /// <param name="predicate"></param>
         /// <returns></returns>
-        List<TEntity> Query(Expression<Func<TEntity, bool>> predicate);
+        Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> predicate);
 
         /// <summary>
         /// 多表关联查询
@@ -30,7 +31,7 @@ namespace Simple.IServices.Base
         /// <param name="predicate"></param>
         /// <param name="tableNames"></param>
         /// <returns></returns>
-        List<TEntity> QueryJoin(Expression<Func<TEntity, bool>> predicate, string[] tableNames);
+        Task<List<TEntity>> QueryJoin(Expression<Func<TEntity, bool>> predicate, string[] tableNames);
         /// <summary>
         /// 升序查询还是降序查询
         /// </summary>
@@ -39,7 +40,7 @@ namespace Simple.IServices.Base
         /// <param name="keySelector"></param>
         /// <param name="isQueryOrderBy"></param>
         /// <returns></returns>
-        List<TEntity> QueryOrderBy<TKey>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TKey>> keySelector, bool isQueryOrderBy);
+        Task<List<TEntity>> QueryOrderBy<TKey>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TKey>> keySelector, bool isQueryOrderBy);
 
         /// <summary>
         /// 升序分页查询还是降序分页
@@ -61,25 +62,25 @@ namespace Simple.IServices.Base
         /// </summary>
         /// <param name="model"></param>
         /// <param name="propertys"></param>
-        bool Update(TEntity model, string[] propertys);
+        Task<bool> Update(TEntity model, string[] propertys);
 
         /// <summary>
         /// 直接查询之后再修改
         /// </summary>
         /// <param name="model"></param>
-        bool Update(TEntity model);
+        Task<bool> Update(TEntity model);
         #endregion
 
         #region 删除
-        bool Delete(TEntity model, bool isadded);
+        Task<bool> Delete(TEntity model, bool isadded);
         #endregion
 
         #region 新增
-        bool Insert(TEntity model);
+        Task<bool> Insert(TEntity model);
         #endregion
 
         #region 统一提交
-        int SaveChanges();
+        Task<int> SaveChanges();
         #endregion
 
         #region 调用存储过程返回一个指定的TResult

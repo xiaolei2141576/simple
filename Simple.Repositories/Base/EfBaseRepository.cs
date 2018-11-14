@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Simple.Repositories.Base
 {
@@ -21,9 +22,9 @@ namespace Simple.Repositories.Base
         }
         #region 查询
 
-        public TEntity Single(Expression<Func<TEntity, bool>> predicate)
+        public async Task<TEntity> Single(Expression<Func<TEntity, bool>> predicate)
         {
-            return _dbSet.Where(predicate).FirstOrDefault();
+            return await Task.Run(() => _dbSet.Where(predicate).FirstOrDefault());
         }
 
         /// <summary>
@@ -31,9 +32,9 @@ namespace Simple.Repositories.Base
         /// </summary>
         /// <param name="predicate"></param>
         /// <returns></returns>
-        public List<TEntity> Query(Expression<Func<TEntity, bool>> predicate)
+        public async Task<List<TEntity>> Query(Expression<Func<TEntity, bool>> predicate)
         {
-            return _dbSet.Where(predicate).ToList();
+            return await Task.Run(() => _dbSet.Where(predicate).ToList());
         }
 
         /// <summary>
@@ -42,7 +43,7 @@ namespace Simple.Repositories.Base
         /// <param name="predicate"></param>
         /// <param name="tableNames"></param>
         /// <returns></returns>
-        public List<TEntity> QueryJoin(Expression<Func<TEntity, bool>> predicate, string[] tableNames)
+        public async Task<List<TEntity>> QueryJoin(Expression<Func<TEntity, bool>> predicate, string[] tableNames)
         {
             if (tableNames == null && tableNames.Any() == false)
             {
@@ -53,7 +54,7 @@ namespace Simple.Repositories.Base
             {
                 query = query.Include(table);
             }
-            return query.Where(predicate).ToList();
+            return await Task.Run(() => query.Where(predicate).ToList());
         }
 
         /// <summary>
@@ -64,13 +65,13 @@ namespace Simple.Repositories.Base
         /// <param name="keySelector"></param>
         /// <param name="isQueryOrderBy"></param>
         /// <returns></returns>
-        public List<TEntity> QueryOrderBy<TKey>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TKey>> keySelector, bool isQueryOrderBy)
+        public async Task<List<TEntity>> QueryOrderBy<TKey>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TKey>> keySelector, bool isQueryOrderBy)
         {
             if (isQueryOrderBy)
             {
                 return _dbSet.Where(predicate).OrderBy(keySelector).ToList();
             }
-            return _dbSet.Where(predicate).OrderByDescending(keySelector).ToList();
+            return await Task.Run(() => _dbSet.Where(predicate).OrderByDescending(keySelector).ToList());
         }
 
         /// <summary>
@@ -104,29 +105,22 @@ namespace Simple.Repositories.Base
         /// </summary>
         /// <param name="model"></param>
         /// <param name="propertys"></param>
-        public bool Update(TEntity model, string[] propertys)
+        public async Task<bool> Update(TEntity model, string[] propertys)
         {
             if (model == null)
             {
                 throw new Exception("实体不能为空");
             }
-
-            if (propertys.Any() == false)
+            if (!propertys.Any())
             {
                 throw new Exception("要修改的属性至少要有一个");
             }
-
-            //将model追击到EF容器
-            EntityEntry entry = _dbContext.Entry(model);
-
-            entry.State = EntityState.Unchanged;
-
-            foreach (var item in propertys)
+            var entry = _dbContext.Entry(model);
+            foreach (var prop in propertys)
             {
-                entry.Property(item).IsModified = true;
+                entry.Property(prop).IsModified = true;
             }
-
-            return entry.State == EntityState.Modified;
+            return await Task.Run(() => _dbContext.Entry(model).State == EntityState.Modified);
             //关闭EF对于实体的合法性验证参数
             //_dbContext.Configuration. = false;
         }
@@ -135,34 +129,34 @@ namespace Simple.Repositories.Base
         /// 直接查询之后再修改
         /// </summary>
         /// <param name="model"></param>
-        public bool Update(TEntity model)
+        public async Task<bool> Update(TEntity model)
         {
-            return _dbContext.Entry(model).State == EntityState.Modified;
+            return await Task.Run(() => _dbContext.Entry(model).State == EntityState.Modified);
         }
         #endregion
 
         #region 删除
-        public bool Delete(TEntity model, bool isadded)
+        public async Task<bool> Delete(TEntity model, bool isadded)
         {
             if (!isadded)
             {
                 _dbSet.Attach(model);
             }
-            return _dbSet.Remove(model).State == EntityState.Deleted;
+            return await Task.Run(() => _dbContext.Remove(model).State == EntityState.Deleted);
         }
         #endregion
 
         #region 新增
-        public bool Insert(TEntity model)
+        public async Task<bool> Insert(TEntity model)
         {
-            return _dbSet.Add(model).State == EntityState.Added;
+            return await Task.Run(() => _dbContext.Add(model).State == EntityState.Added);
         }
         #endregion
 
         #region 统一提交
-        public int SaveChanges()
+        public async Task<int> SaveChanges()
         {
-            return _dbContext.SaveChanges();
+            return await _dbContext.SaveChangesAsync();
         }
         #endregion
 

@@ -6,4 +6,3 @@ G:\myproject\simple\Simple.IServices\obj\Debug\netcoreapp2.1\Simple.IServices.As
 G:\myproject\simple\Simple.IServices\obj\Debug\netcoreapp2.1\Simple.IServices.AssemblyInfo.cs
 G:\myproject\simple\Simple.IServices\obj\Debug\netcoreapp2.1\Simple.IServices.dll
 G:\myproject\simple\Simple.IServices\obj\Debug\netcoreapp2.1\Simple.IServices.pdb
-G:\myproject\simple\Simple.IServices\obj\Debug\netcoreapp2.1\Simple.IServices.csprojAssemblyReference.cache
