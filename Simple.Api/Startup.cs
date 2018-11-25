@@ -19,6 +19,7 @@ using Autofac.Extensions.DependencyInjection;
 using Simple.Api.AuthHelper;
 using Swashbuckle.AspNetCore.Swagger;
 using Simple.Api.SwaggerHelper;
+using Simple.IRepositories.Base;
 
 namespace Simple.Api
 {
@@ -34,12 +35,12 @@ namespace Simple.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-           var connectionString = Configuration.GetSection("AppSettings:SqlServerConnection").Value; //获取数据库链接字符串
-            services.AddDbContext<DbContext>(option =>
-            {
-                //option.UseSqlServer(SqlSugarBaseDb.ConnectionString, db => db.UseRowNumberForPaging());
-                option.UseSqlServer(connectionString);
-            });
+            //var connectionString = Configuration.GetSection("AppSettings:SqlServerConnection").Value; //获取数据库链接字符串
+            // services.AddDbContext<DbContext>(option =>
+            // {
+            //     //option.UseSqlServer(SqlSugarBaseDb.ConnectionString, db => db.UseRowNumberForPaging());
+            //     option.UseSqlServer(connectionString);
+            // });
             //services.AddSingleton(SqlSugarBaseDb.ConnectionString);
             //services.AddTransient<IStudentSubscriberService, StudentService>();
 

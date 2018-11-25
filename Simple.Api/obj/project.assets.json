@@ -4536,6 +4536,16 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Simple.IRepositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Simple.IRepositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Simple.IRepositories.dll": {}
+        }
+      },
       "Simple.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -12006,6 +12016,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Simple.IRepositories/1.0.0": {
+      "type": "project",
+      "path": "../Simple.IRepositories/Simple.IRepositories.csproj",
+      "msbuildProject": "../Simple.IRepositories/Simple.IRepositories.csproj"
+    },
     "Simple.Models/1.0.0": {
       "type": "project",
       "path": "../Simple.Models/Simple.Models.csproj",
@@ -12019,6 +12034,7 @@
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
+      "Simple.IRepositories >= 1.0.0",
       "Simple.Models >= 1.0.0",
       "Swashbuckle.AspNetCore >= 3.0.0"
     ]
@@ -12053,6 +12069,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "G:\\myproject\\simple\\Simple.IRepositories\\Simple.IRepositories.csproj": {
+              "projectPath": "G:\\myproject\\simple\\Simple.IRepositories\\Simple.IRepositories.csproj"
+            },
             "G:\\myproject\\simple\\Simple.Models\\Simple.Models.csproj": {
               "projectPath": "G:\\myproject\\simple\\Simple.Models\\Simple.Models.csproj"
             }

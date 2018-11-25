@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Simple.IRepositories\Simple.IRepositories.csproj" />
     <ProjectReference Include="..\Simple.Models\Simple.Models.csproj" />
   </ItemGroup>
 

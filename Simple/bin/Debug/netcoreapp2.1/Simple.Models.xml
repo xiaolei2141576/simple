@@ -4,6 +4,16 @@
         <name>Simple.Models</name>
     </assembly>
     <members>
+        <member name="T:Simple.Models.Common.BaseModel">
+            <summary>
+            基础实体（被所有业务实体继承）
+            </summary>
+        </member>
+        <member name="P:Simple.Models.Common.BaseModel.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
         <member name="P:Simple.Models.Common.TokenModelJWT.Uid">
             <summary>
             Id

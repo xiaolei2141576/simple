@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Simple.IRepositories.Base
+namespace Simple.Repositories.Base
 {
     ///// <summary>
     /////     工作单元接口
@@ -27,7 +27,7 @@ namespace Simple.IRepositories.Base
 
         #region 方法
 
-        DbContext DbContext { get; }
+        EfDbContext DbContext { get; }
 
         /// <summary>
         ///     命令提交

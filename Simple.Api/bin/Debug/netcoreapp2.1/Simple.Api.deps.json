@@ -29,6 +29,7 @@
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
+          "Simple.IRepositories": "1.0.0",
           "Simple.Models": "1.0.0",
           "Swashbuckle.AspNetCore": "3.0.0"
         },
@@ -402,6 +403,14 @@
             "rid": "win",
             "assetType": "runtime"
           }
+        }
+      },
+      "Simple.IRepositories/1.0.0": {
+        "runtime": {
+          "Simple.IRepositories.dll": {}
+        },
+        "compile": {
+          "Simple.IRepositories.dll": {}
         }
       },
       "Simple.Models/1.0.0": {
@@ -3499,6 +3508,11 @@
       "sha512": "sha512-VnYp1NxGx8Ww731y2LJ1vpfb/DKVNKEZ8Jsh5SgQTZREL/YpWRArgh9pI8CDLmgHspZmLL697CaLvH85qQpRiw==",
       "path": "system.diagnostics.tracesource/4.3.0",
       "hashPath": "system.diagnostics.tracesource.4.3.0.nupkg.sha512"
+    },
+    "Simple.IRepositories/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Simple.Models/1.0.0": {
       "type": "project",

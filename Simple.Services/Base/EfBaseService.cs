@@ -4,8 +4,8 @@ using System.Text;
 using System.Linq;
 using System.Linq.Expressions;
 using Simple.IServices.Base;
-using Simple.IRepositories.Base;
 using System.Threading.Tasks;
+using Simple.IRepositories.Base;
 
 namespace Simple.Services.Base
 {
