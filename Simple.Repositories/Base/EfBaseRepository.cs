@@ -368,10 +368,20 @@ namespace Simple.Repositories.Base
             return source;
         }
 
-        //public void Dispose()
-        //{
-        //    throw new NotImplementedException();
-        //}
+        public async Task<List<TEntity>> QueryJoin(Expression<Func<TEntity, bool>> predicate, string[] tableNames)
+        {
+            if (tableNames == null && tableNames.Any() == false)
+            {
+                throw new Exception("缺少连表名称");
+            }
+            IQueryable<TEntity> query = _dbSet.AsQueryable();
+            foreach (var table in tableNames)
+            {
+                query = query.Include(table);
+            }
+            return await Task.Run(() => query.Where(predicate).ToList());
+        }
+
         #endregion
     }
 }

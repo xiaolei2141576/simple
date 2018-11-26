@@ -20,6 +20,7 @@ using Simple.Api.AuthHelper;
 using Swashbuckle.AspNetCore.Swagger;
 using Simple.Api.SwaggerHelper;
 using Simple.IRepositories.Base;
+using Simple.Repositories.Base;
 
 namespace Simple.Api
 {
@@ -36,11 +37,12 @@ namespace Simple.Api
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             //var connectionString = Configuration.GetSection("AppSettings:SqlServerConnection").Value; //获取数据库链接字符串
-            // services.AddDbContext<DbContext>(option =>
-            // {
-            //     //option.UseSqlServer(SqlSugarBaseDb.ConnectionString, db => db.UseRowNumberForPaging());
-            //     option.UseSqlServer(connectionString);
-            // });
+            services.AddDbContext<DbContext>(option =>
+            {
+                //option.UseSqlServer(SqlSugarBaseDb.ConnectionString, db => db.UseRowNumberForPaging());
+                option.UseSqlServer(Configuration.GetSection("AppSettings:SqlServerConnection").Value);
+            });
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             //services.AddSingleton(SqlSugarBaseDb.ConnectionString);
             //services.AddTransient<IStudentSubscriberService, StudentService>();
 

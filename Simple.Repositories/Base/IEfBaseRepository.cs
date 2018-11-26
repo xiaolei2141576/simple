@@ -217,6 +217,14 @@ namespace Simple.Repositories.Base
         /// <returns>分页后的数据集合</returns>
         IQueryable<TEntity> QueryPage<TKey>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TKey>> orderBy, out int totalRow, bool isQueryOrderBy = true, int pageIndex = 1, int pageSize = 20);
 
+        /// <summary>
+        /// 多表联查
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <param name="tableNames"></param>
+        /// <returns></returns>
+        Task<List<TEntity>> QueryJoin(Expression<Func<TEntity, bool>> predicate, string[] tableNames)
+
         #endregion
     }
 }

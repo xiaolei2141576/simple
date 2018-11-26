@@ -36,3 +36,5 @@ G:\myproject\simple\Simple.Api\obj\Debug\netcoreapp2.1\Simple.Api.dll
 G:\myproject\simple\Simple.Api\obj\Debug\netcoreapp2.1\Simple.Api.pdb
 G:\myproject\simple\Simple.Api\bin\Debug\netcoreapp2.1\Simple.IRepositories.dll
 G:\myproject\simple\Simple.Api\bin\Debug\netcoreapp2.1\Simple.IRepositories.pdb
+G:\myproject\simple\Simple.Api\bin\Debug\netcoreapp2.1\Simple.Repositories.dll
+G:\myproject\simple\Simple.Api\bin\Debug\netcoreapp2.1\Simple.Repositories.pdb
